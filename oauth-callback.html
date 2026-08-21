@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Authorization complete</title>
+<style>
+body { font-family: -apple-system, Helvetica, Arial, sans-serif; max-width: 600px; margin: 80px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+code { background: #f1f1f1; padding: 12px; display: block; word-break: break-all; border-radius: 6px; margin-top: 10px; }
+</style>
+</head>
+<body>
+<h1>Authorization complete</h1>
+<p>Copy the value below back into the terminal to finish connecting the app.</p>
+<code id="params"></code>
+<script>
+document.getElementById('params').textContent = window.location.search || '(no parameters found in URL)';
+</script>
+</body>
+</html>
